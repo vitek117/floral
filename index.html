@@ -17,145 +17,200 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-      <a href="/index.html"><img src="./img/logoP.svg" alt="logo plantku" /></a>
-      <button><img src="./img/search1.png" alt="search" /></button>
-      <button><img src="./img/shopping.png" alt="shopping" /></button>
+    <header class="header">
+      <div class="container">
+        <!-- <img src="./img/floral.jpg" alt=""> -->
+        <div class="header-box">
+          <a class="header-logo" href="/index.html"
+            ><img src="./img/logoP.svg" alt="logo plantku" 
+          /></a>
 
-      <button type="button" class="button btn-first">Sign Up</button>
-      <button type="button" class="button btn-second">Sign In</button>
+          <button class="btn-he1"><img src="./img/search1.png" alt="search" /></button>
+          <button class="btn-he2"><img src="./img/shopping.png" alt="shopping" /></button>
+
+          <button type="button" class="button btn-first">Sign Up</button>
+          <button type="button" class="button btn-second">Sign In</button>
+        </div>
+      </div>
     </header>
+
     <!-- main -->
     <main>
       <!-- section1-hero -->
-      <section>
-        <h1 class="hero-title">Kembang Flower Mantap</h1>
-        <p class="hero-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s,
-        </p>
-        <button type="button">
-          <span class="hero-but1">Previous</span>
-          <span class="hero-but1-2">Kaktus Plant</span>
-        </button>
-        <button type="button">
-          <span class="hero-but2-1">Next</span>
-          <span class="hero-but2-2">Rahasia Plant</span>
-        </button>
+      <section class="hero">
+        <div class="container flex">
+          <img src="./img/floral.jpg" alt="" width="608" height="740" />
+          <div class="hero-box-title">
+            <h1 class="hero-title">Kembang Flower Mantap</h1>
+            <p class="hero-text">
+              Lorem Ipsum is simply dummy text of the printing and
+              typesettingindustry. Lorem Ipsum has been the industry's standard
+              dummy textever since the 1500s,
+            </p>
+
+            <div class="hero-box-btn">
+              <div class="hero-box-left">
+                <button type="button" class="hero-btn-first btn">
+                  <span class="hero-but1">Previous</span>
+                  <span class="hero-but1-2">Kaktus Plant</span>
+                </button>
+              </div>
+              <div class="hero-box-fight">
+                <button type="button" class="hero-btn-second btn">
+                  <span class="hero-but2-1">Next</span>
+                  <span class="hero-but2-2">Rahasia Plant</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- benefits -->
-      <section>
-        <h2 hidden>benefits</h2>
-        <ul>
-          <li>
-            <img src="./img/Group1.png" alt="delivery" />
-            <p class="benefits-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard
-            </p>
-          </li>
-          <li>
-            <img src="./img/Group2.png" alt="delivery" />
-            <p class="benefits-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard
-            </p>
-          </li>
-          <li>
-            <img src="./img/Group3.png" alt="delivery" />
-            <p class="benefits-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard
-            </p>
-          </li>
-          <li>
-            <img src="./img/Group4.png" alt="delivery" />
-            <p class="benefits-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard
-            </p>
-          </li>
-        </ul>
+      <section class="benefits">
+        <div class="container">
+          <h2 class="visually-hidden">benefits</h2>
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <img src="./img/Group1.png" alt="delivery" />
+              <p class="benefits-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard
+              </p>
+            </li>
+            <li class="benefits-item">
+              <img src="./img/Group2.png" alt="delivery" />
+              <p class="benefits-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard
+              </p>
+            </li>
+            <li class="benefits-item">
+              <img src="./img/Group3.png" alt="delivery" />
+              <p class="benefits-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard
+              </p>
+            </li>
+            <li class="benefits-item">
+              <img src="./img/Group4.png" alt="delivery" />
+              <p class="benefits-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- featured -->
-      <section>
-        <h2 class="featured-title">Featured Plants</h2>
-        <ul>
-          <li>
-            <img src="./img/Mask1.jpg" alt="" />
-            <p class="featured-text">Kaktus Plants</p>
-            <span>IDR 85.000</span>
-          </li>
-          <li>
-            <img src="./img/Mask2.jpg" alt="" />
-            <p class="featured-text">Landak Plants</p>
-            <span>IDR 105.000</span>
-          </li>
-          <li>
-            <img src="./img/Mask3.jpg" alt="" />
-            <p class="featured-text">Kecubung Plants</p>
-            <span>IDR 85.000</span>
-          </li>
-          <li>
-            <img src="./img/Mask4.jpg" alt="" />
-            <p class="featured-text">Kecubung Plants</p>
-            <span>IDR 85.000</span>
-          </li>
-          <li>
-            <img src="./img/Mask5.jpg" alt="" />
-            <p class="featured-text">Kaktus Plants</p>
-            <span>IDR 85.000</span>
-          </li>
-        </ul>
+      <section class="featured">
+        <div class="container">
+          <div class="featured-box-title">
+            <h2 class="featured-title">Featured Plants</h2>
+            <p class="featured-filter">Cheaper First</p>
+          </div>
+          <ul class="featured-list">
+            <li>
+              <img src="./img/Mask1.jpg" alt="" width="217" />
+              <p class="featured-text">Kaktus Plants</p>
+              <span class="featured-price">IDR 85.000</span>
+            </li>
+            <li>
+              <img src="./img/Mask2.jpg" alt="" width="217" />
+              <p class="featured-text">Landak Plants</p>
+              <span class="featured-price">IDR 105.000</span>
+            </li>
+            <li>
+              <img src="./img/Mask3.jpg" alt="" width="217" />
+              <p class="featured-text">Kecubung Plants</p>
+              <span class="featured-price">IDR 85.000</span>
+            </li>
+            <li>
+              <img src="./img/Mask4.jpg" alt="" width="217" />
+              <p class="featured-text">Kecubung Plants</p>
+              <span class="featured-price">IDR 85.000</span>
+            </li>
+            <li>
+              <img src="./img/Mask5.jpg" alt="" width="217" />
+              <p class="featured-text">Kaktus Plants</p>
+              <span class="featured-price">IDR 85.000</span>
+            </li>
+          </ul>
+        </div>
       </section>
-      <!-- buyMore -->
-      <section>
-        <h2 class="buyMore-title">
-          Buy more plants, it helps you to be relaxed
-        </h2>
-        <p class="buyMore-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida
-          gravida aliquam. Pellentesque et lobortis nisl. Sed et mauris justo.
-          Nulla eu enim non mauris maximus dignissim. Maecenas vitae eros
-          sapien. Quisque pellentesque tempus dignissim.
-        </p>
-        <img src="./img/floral2.jpg" alt="" />
-        <img src="./img/floral3.jpg" alt="" />
-        <h2 class="buyMore-title2">
-          Get your favourites plant on our shop now
-        </h2>
-        <a href="/index.html" class="buyMore-Visit">Visit Shop</a>
+      <!-- buymore -->
+      <section class="buymore">
+        <div class="container flex">
+          <div class="buymore-box-left">
+            <h2 class="buymore-title">
+              Buy more plants, it helps you to be relaxed
+            </h2>
+            <p class="buymore-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              gravida gravida aliquam. Pellentesque et lobortis nisl. Sed et
+              mauris justo. Nulla eu enim non mauris maximus dignissim. Maecenas
+              vitae eros sapien. Quisque pellentesque tempus dignissim.
+            </p>
+            <img src="./img/floral2.jpg" alt="" width="568" />
+          </div>
+          <div class="buymore-box-righg">
+            <img src="./img/floral3.jpg" alt="" width="513" />
+          </div>
+        </div>
+      </section>
+      <!-- shop -->
+      <section class="shop">
+        <div class="container flex">
+          <div class="shop-box">
+            <h2 class="shop-title">
+              Get your favourites plant on our shop now
+            </h2>
+            <a href="/index.html" class="shop-btn">Visit Shop</a>
+          </div>
+
+          <div>
+            <img src="./img/111.jpg" alt="" width="480" />
+          </div>
+        </div>
       </section>
     </main>
     <!-- footer -->
-    <footer>
-      <a href="/index.html" class="footer-logo">plantku</a>
-      <h2 class="footer-title">Plantku House</h2>
-      <address>
-        <p class="footer-adr">
-          Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, Kota Yogyakarta,
-          Daerah Istimewa Yogyakarta 55282
-        </p>
-      </address>
-      <ul>
-        <li class="footer-li1">Perusahaan</li>
-        <li class="footer-li2">Tentang Kami</li>
-        <li class="footer-li2">Hubungi Kami</li>
-      </ul>
-      <ul>
-        <li class="footer-li1">Produk</li>
-        <li class="footer-li2">Tanaman</li>
-        <li class="footer-li2">Tanaman Lain</li>
-      </ul>
+    <footer class="footer">
+      <div class="container container-footer flex">
+        <div class="footer-list-adr">
+          <a href="/index.html" class="footer-logo">plantku</a>
+        <h2 class="footer-title">Plantku House</h2>
+        <address>
+          <p class="footer-adr">
+            Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, Kota Yogyakarta,
+            Daerah Istimewa Yogyakarta 55282
+          </p>
+        </address>
+        </div>
+        <ul class="footer-list">
+          <li class="footer-li1">Perusahaan</li>
+          <li class="footer-li2">Tentang Kami</li>
+          <li class="footer-li2">Hubungi Kami</li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-li1">Produk</li>
+          <li class="footer-li2">Tanaman</li>
+          <li class="footer-li2">Tanaman Lain</li>
+        </ul>
 
-      <ul>
-        <li class="footer-li1">Berlangganan Email Kami</li>
-        <li class="footer-li3">Masukan Alamat Email</li>
-        <li>
-          <button type="button" class="footer-btn">Submit</button>
-        </li>
-      </ul>
+        <ul class="footer-list">
+          <li class="footer-li1">Berlangganan Email Kami</li>
+          <li class="footer-li3">Masukan Alamat Email</li>
+          <li>
+            <button type="button" class="footer-btn">Submit</button>
+          </li>
+        </ul>
+      </div>
     </footer>
+
+    <!-- 
+    <div class="box1">
+      <div class="box2-1"></div>
+      <div class="box2-2"></div>
+    </div> -->
   </body>
 </html>
