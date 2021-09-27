@@ -107,7 +107,8 @@ img {
   height: 36px;
   border-color: transparent;
   cursor: pointer;
-  /* --------------не удается сделать кнопку нужного размера!!--- */
+  display: inline-block; 
+   /* --------------не удается сделать кнопку нужного размера!!--- */
 }
 .btn-first {
   margin-left: 8px;
@@ -297,7 +298,7 @@ background-image: url("../img/fast\ 1.svg");
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
-  /* text-align: center; */
+  text-align: center;
   color: var(--black-text);
   /* ----незнаю как выровнять!!----------------- */
 }
