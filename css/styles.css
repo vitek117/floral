@@ -15,7 +15,6 @@
   --bgc-color: #f3f4f6;
 }
 body {
-  
   color: var(--main-black-text);
   font-family: "Montserrat", sans-serif;
   /* font-family: "Nunito", sans-serif;
@@ -66,22 +65,31 @@ img {
 
 /* ------header------- */
 .header {
-  
 }
 .header-logo {
   margin-right: 860px;
 
   /* --------------пришлось указать фиксированую ширину!!!!!!!!!!--------- */
 }
-.btn-he1{
+.btn-he1 {
   margin-right: 40px;
   background-color: transparent;
   border-color: transparent;
-
+  background-image: url("/img/shopping.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  /* ------------------не пойму почему меньше по размеру */
 }
-.btn-he2{
+.btn-he2 {
   background-color: transparent;
   border-color: transparent;
+  background-image: url("/img/search1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
 }
 .header-box {
   display: flex;
@@ -90,13 +98,15 @@ img {
   margin-top: 40px;
 }
 .button {
-  /* padding: 5px 32px; */
+  padding: 5px 32px;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   line-height: 1.4;
   text-align: center;
   width: 111px;
   height: 36px;
+  border-color: transparent;
+  cursor: pointer;
   /* --------------не удается сделать кнопку нужного размера!!--- */
 }
 .btn-first {
@@ -119,12 +129,11 @@ img {
   flex-wrap: wrap;
   justify-content: flex-end;
   max-width: 519px;
-  
 }
 .hero-title {
   margin-top: 110px;
   margin-bottom: 24px;
-  
+
   font-weight: 500;
   font-size: 68px;
   line-height: 1.22;
@@ -145,7 +154,6 @@ img {
   padding: 39px 49px;
   width: 320px;
   height: 160px;
-  
 }
 .hero-box-fight {
   padding: 39px 49px;
@@ -158,12 +166,14 @@ img {
   flex-wrap: wrap;
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 .hero-btn-second {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--main-green-text);
   border-color: transparent;
+  cursor: pointer;
 }
 .hero-but1 {
   margin-bottom: 12px;
@@ -201,7 +211,42 @@ img {
 }
 .benefits-item {
   padding: 20px 16px 21px;
+  border: 1px solid #E0E0E0;
 }
+.benefits-title{
+  display: flex;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.5;
+color: var(--main-green-text);
+width: 137px;
+margin-left: 0px;
+
+}
+.benefits-title::before{
+content: "";
+
+display: block;
+width: 48px;
+height: 48px;
+margin-right: 16px;
+background-color: transparent;
+/* -----не пойму почкму тайлт поверх картинки  */
+/* -----почему такой польшой марджин-- */
+}
+.benefits-icon-delivery::before{
+background-image: url("../img/fast\ 1.svg");
+}
+.benefits-icon-service::before{
+  background-image: url("../img/headphones\ 1.svg");
+}
+.benefits-icon-plants::before{
+  background-image: url("../img/plant\ 1.svg");
+}
+.benefits-icon-price::before{
+  background-image: url("../img/dollar-symbol\ 1.svg");
+}
+
 .benefits-item:not(:last-child) {
   margin-right: 32px;
 }
@@ -254,6 +299,7 @@ img {
   line-height: 1.25;
   /* text-align: center; */
   color: var(--black-text);
+  /* ----незнаю как выровнять!!----------------- */
 }
 /* -----------buymore----------------- */
 .buymore {
@@ -264,14 +310,12 @@ img {
 }
 
 .buymore-title {
-
   margin-bottom: 16px;
   padding-left: 20px;
   font-size: 40px;
   line-height: 1.4;
 }
 .buymore-text {
-  
   padding-left: 20px;
   margin-bottom: 74px;
   font-size: 16px;
@@ -304,7 +348,7 @@ img {
   text-decoration: none;
   color: #fafefe;
   background-color: var(--main-green-text);
- 
+  cursor: pointer;
 }
 
 /* ---------footer------- */
@@ -313,7 +357,7 @@ img {
   padding: 60px 167px 71px 167px;
   /* flex-basis: calc(100% / 4); */
 }
-.footer-list-adr{
+.footer-list-adr {
   width: 284px;
 }
 .footer-logo {
@@ -372,6 +416,7 @@ img {
   color: var(--white-text);
   background-color: var(--main-green-text);
   border-color: transparent;
+  cursor: pointer;
 }
 /* 
 .box1{
