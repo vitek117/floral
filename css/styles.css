@@ -103,12 +103,12 @@ img {
   font-size: 14px;
   line-height: 1.4;
   text-align: center;
-  width: 111px;
+  /* width: 111px; */
   height: 36px;
   border-color: transparent;
   cursor: pointer;
-  display: inline-block; 
-   /* --------------не удается сделать кнопку нужного размера!!--- */
+  display: inline-block;
+  /* --------------не удается сделать кнопку нужного размера!!--- */
 }
 .btn-first {
   margin-left: 8px;
@@ -212,39 +212,38 @@ img {
 }
 .benefits-item {
   padding: 20px 16px 21px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
 }
-.benefits-title{
+.benefits-title {
   display: flex;
-font-weight: bold;
-font-size: 16px;
-line-height: 1.5;
-color: var(--main-green-text);
-width: 137px;
-margin-left: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-green-text);
+  width: 137px;
+  margin-left: 0px;
+}
+.benefits-title::before {
+  content: "";
 
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  background-color: transparent;
+  /* -----не пойму почкму тайлт поверх картинки  */
+  /* -----почему такой польшой марджин-- */
 }
-.benefits-title::before{
-content: "";
-
-display: block;
-width: 48px;
-height: 48px;
-margin-right: 16px;
-background-color: transparent;
-/* -----не пойму почкму тайлт поверх картинки  */
-/* -----почему такой польшой марджин-- */
+.benefits-icon-delivery::before {
+  background-image: url("../img/fast\ 1.svg");
 }
-.benefits-icon-delivery::before{
-background-image: url("../img/fast\ 1.svg");
-}
-.benefits-icon-service::before{
+.benefits-icon-service::before {
   background-image: url("../img/headphones\ 1.svg");
 }
-.benefits-icon-plants::before{
+.benefits-icon-plants::before {
   background-image: url("../img/plant\ 1.svg");
 }
-.benefits-icon-price::before{
+.benefits-icon-price::before {
   background-image: url("../img/dollar-symbol\ 1.svg");
 }
 
