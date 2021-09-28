@@ -98,18 +98,31 @@ img {
   margin-top: 40px;
 }
 .button {
-  padding: 5px 32px;
+  display: inline-block;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-  /* width: 111px; */
+  line-height: 1.43;
+
+  width: 111px;
   height: 36px;
-  border-color: transparent;
+  border: 1px solid transparent;
   cursor: pointer;
-  display: inline-block;
-  /* --------------не удается сделать кнопку нужного размера!!--- */
+  /*  */
+  /* padding: 5px 32px;
+      display: inline-block;
+    
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer; */
 }
+  
+  /* --------------не удается сделать кнопку нужного размера!!--- */
+
 .btn-first {
   margin-left: 8px;
   color: var(--main-green-text);
