@@ -71,23 +71,17 @@ img {
 
   /* --------------пришлось указать фиксированую ширину!!!!!!!!!!--------- */
 }
-.btn-he1 {
-  margin-right: 40px;
+.btn-icon {
   background-color: transparent;
   border-color: transparent;
-  background-image: url("../img/shopping-cart\ 1.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  /* ------------------не пойму почему меньше по размеру */
+  /* ------------------залит черный!!!!!!---------- */
 }
-.btn-he2 {
-  background-color: transparent;
-  border-color: transparent;
-  background-image: url("../img/search\ 1.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+.btn-icon + .btn-icon {
+  margin-left: 40px;
+}
+
+.header-icon {
+  fill: #000000;
   width: 20px;
   height: 20px;
 }
@@ -107,21 +101,9 @@ img {
   height: 36px;
   border: 1px solid transparent;
   cursor: pointer;
-  /*  */
-  /* padding: 5px 32px;
-      display: inline-block;
-    
-    font-family: "Nunito", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.43;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer; */
 }
-  
-  /* --------------не удается сделать кнопку нужного размера!!--- */
+
+/* --------------не удается сделать кнопку нужного размера!!--- */
 
 .btn-first {
   margin-left: 8px;
@@ -164,7 +146,54 @@ img {
   /* margin-left: 86px; */
   display: flex;
 }
-.hero-box-left {
+.hero-btn-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  height: 160px;
+  background-color: transparent;
+}
+
+.hero-btn-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  height: 160px;
+  background-color: var(--main-green-text);
+}
+.text-next {
+  margin-bottom: 14px;
+  display: flex;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--footer-text);
+}
+.hero-btn-text-first {
+  display: flex;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--main-green-text);
+}
+.hero-btn-text-second {
+  display: flex;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--white-text);
+}
+
+.hero-icon{
+  width: 32px;
+  height: 32px;
+  fill: var(--gray-text);
+}
+/* .hero-box-left {
   padding: 39px 49px;
   width: 320px;
   height: 160px;
@@ -214,7 +243,7 @@ img {
   font-size: 32px;
   line-height: 1.2;
   color: var(--white-text);
-}
+} */
 
 /* --------benefits---------- */
 .benefits {
@@ -227,6 +256,18 @@ img {
   padding: 20px 16px 21px;
   border: 1px solid #e0e0e0;
 }
+.benefits-box {
+  display: flex;
+  align-items: center;
+  width: 201px;
+}
+.benefits-icon {
+  fill: var(--main-green-text);
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
 .benefits-title {
   display: flex;
   font-weight: bold;
@@ -235,29 +276,6 @@ img {
   color: var(--main-green-text);
   width: 137px;
   margin-left: 0px;
-}
-.benefits-title::before {
-  content: "";
-
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin-right: 16px;
-  background-color: transparent;
-  /* -----не пойму почкму тайлт поверх картинки  */
-  /* -----почему такой польшой марджин-- */
-}
-.benefits-icon-delivery::before {
-  background-image: url("../img/fast\ 1.svg");
-}
-.benefits-icon-service::before {
-  background-image: url("../img/headphones\ 1.svg");
-}
-.benefits-icon-plants::before {
-  background-image: url("../img/plant\ 1.svg");
-}
-.benefits-icon-price::before {
-  background-image: url("../img/dollar-symbol\ 1.svg");
 }
 
 .benefits-item:not(:last-child) {
@@ -268,6 +286,7 @@ img {
   margin-top: 16px;
   font-size: 10px;
   line-height: 1.6;
+  /* -------------не удалось выровнять текст ------- */
 }
 
 /* ----------featured-------- */
